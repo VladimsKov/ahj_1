@@ -1,11 +1,10 @@
 // TODO: write code here
 
-// comment this to pass build
-const unusedVariable = 'variable';
-
-// for demonstration purpose only
 export default function demo(value) {
-  return value;
+  if (typeof (value) === 'number' && value > 100) return `${value} больше, чем 100`;
+  if (typeof (value) === 'number' && value <= 100) return `${value} не больше, чем 100`;
+  return 'значение - не число';
 }
 
-console.log('app.js included');
+// console.log(demo(40));
+// console.log(demo(150));
